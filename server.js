@@ -41,20 +41,20 @@ app.use((request, response, next) => {
 // 	});
 // });
 
+// app.get('/', (request, response) => {
+// 	//response.send('</h1>Hello Express!</h1>');
+// 	response.send({
+// 		name: 'Raziq',
+// 		school: [
+// 			'BCIT',
+// 			'SFU',
+// 			'UBC'
+// 		]
+// 	})
+// });
+
+
 app.get('/', (request, response) => {
-	//response.send('</h1>Hello Express!</h1>');
-	response.send({
-		name: 'Raziq',
-		school: [
-			'BCIT',
-			'SFU',
-			'UBC'
-		]
-	})
-});
-
-
-app.get('/info', (request, response) => {
 	response.render('about.hbs', {
 		title: 'About page',
 		year: new Date().getFullYear(),
