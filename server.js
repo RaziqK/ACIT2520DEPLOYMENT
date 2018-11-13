@@ -97,6 +97,6 @@ app.get('/info', (request, response) => {
 // 	})
 // })
 
-app.listen(8080, () => {
-	console.log('Server is up on the port 8080');
+app.listen(port, () => {
+	console.log(`Server ${port}`);
 });
